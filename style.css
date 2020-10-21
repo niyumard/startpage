@@ -185,7 +185,7 @@ div.bookmarks.art a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #222D32;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -193,7 +193,7 @@ div.bookmarks.art a:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: #8F9191;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
