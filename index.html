@@ -60,7 +60,25 @@
         <div class="category">
           <div class="icon"><img src="icons/entertainment.svg" /></div>
           <div class="bookmarks ent">
-            <li><a class="bm" href="https://www.youtube.com/">Youtube</a></li>
+            <li><a class="bm" href="#" onClick="javascript:openSite()">Youtube</a></li><script>
+           var links = [
+             "youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q",
+             "youtube.com/user/Kurzgesagt/videos",
+             "youtube.com/user/numberphile",
+             "youtube.com/user/schooloflifechannel",
+             "youtube.com/c/halfasinteresting/videos",
+             "youtube.com/c/thephilosophytube/featured"
+           ]
+           var openSite = function() {
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * links.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var link = 'https://' + links[randIdx];
+     window.location=link;
+    };
+</script>
             <li><a class="bm" href="https://duolingo.com">Duolingo</a></li>
             <li><a class="bm" href="https://cloud.disroot.org/apps/news/">RSS</a></li>
             <li><a class="bm" href="https://lbry.tv/">lbry.tv</a></li>
