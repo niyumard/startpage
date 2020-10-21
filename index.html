@@ -75,8 +75,8 @@
             <li><a class="bm" href="https://newsinslowfrench.com/">News in Slow French</a></li>
             <li><a class="bm" href="javascript:openSite()">Esperanto</a></li><script>
            var links = [
-              "https://reddit.com/r/esperanto",
-              "https://uea.facila.org/"
+              "reddit.com/r/esperanto",
+              "uea.facila.org/"
            ]
            var openSite = function() {
               // get a random number between 0 and the number of links
@@ -84,7 +84,7 @@
               // round it, so it can be used as array index
               randIdx = parseInt(randIdx, 10);
               // construct the link to be opened
-              var link = 'http://' + links[randIdx];
+              var link = 'https://' + links[randIdx];
      return link;
     };
 </script>
