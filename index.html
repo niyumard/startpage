@@ -73,7 +73,7 @@
           <div class="bookmarks mus">
             <li><a class="bm" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
             <li><a class="bm" href="https://newsinslowfrench.com/">News in Slow French</a></li>
-            <li><a class="bm" href="javascript:openSite()">Esperanto</a></li><script>
+            <li><a class="bm" href="#" onClick="javascript:openSite()">Esperanto</a></li><script>
            var links = [
               "reddit.com/r/esperanto",
               "uea.facila.org/"
@@ -85,7 +85,7 @@
               randIdx = parseInt(randIdx, 10);
               // construct the link to be opened
               var link = 'https://' + links[randIdx];
-     return link;
+     window.location=link;
     };
 </script>
             <li><a class="bm" href="https://www.npr.org/sections/money/">Planet Money</a></li>
