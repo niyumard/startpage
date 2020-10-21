@@ -69,13 +69,27 @@
         </div>
 
         <div class="category">
-          <div class="icon"><img src="icons/music.svg" /></div>
+          <div class="icon"><img style="width: 48px;height: 48px;" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Books_Silhouette.svg"></div>
           <div class="bookmarks mus">
-            <li><a class="bm" href="https://open.spotify.com/">Spotify</a></li>
-            <li><a class="bm" href="https://thelastdisaster.org/">LDisaster</a></li>
-            <li><a class="bm" href="https://deathgrind.club/">Deathgrind</a></li>
-            <li><a class="bm" href="https://coreradio.ru/">Core Radio</a></li>
-            <li><a class="bm" href="https://blogmg23.blogspot.com/">Mg23</a></li>
+            <li><a class="bm" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+            <li><a class="bm" href="https://newsinslowfrench.com/">News in Slow French</a></li>
+            <li><a class="bm" href="javascript:openSite()">Esperanto</a></li><script>
+           var links = [
+              "https://reddit.com/r/esperanto",
+              "https://uea.facila.org/"
+           ]
+           var openSite = function() {
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * links.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var link = 'http://' + links[randIdx];
+     return link;
+    };
+</script>
+            <li><a class="bm" href="https://www.npr.org/sections/money/">Planet Money</a></li>
+            <li><a class="bm" href="https://www.reddit.com/r/Economics/">/r/Economics</a></li>
           </div>
         </div>
 
